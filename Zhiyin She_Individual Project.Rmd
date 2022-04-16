@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
+# 1
 Scape all links from the left navigation menu of the book website.
 ```{r}
 library(rvest)
@@ -20,7 +20,7 @@ urls <- paste0("https://csgillespie.github.io/efficientR/", urls)
 head(urls)
 ```
 
-
+# 2
 Scrape content from the single page.
 ```{r}
 getContent <- function(url){
@@ -32,7 +32,7 @@ getContent <- function(url){
 getContent(urls[1])
 ```
 
-
+# 3
 Scrape the contents from all the pages of that book.
 ```{r}
 text <- c()
